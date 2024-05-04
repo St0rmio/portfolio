@@ -272,3 +272,12 @@ footer {
   background-color: #000000;
   color: #fff;
 }
+
+p.liens a {
+    color: blue;
+    text-decoration: none;
+}
+
+p.liens a:hover {
+    text-decoration: underline;
+}
