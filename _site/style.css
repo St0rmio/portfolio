@@ -1,0 +1,434 @@
+/* GLOBAL CSS */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  background-color: whitesmoke; 
+  font-family: 'Raleway', sans-serif; 
+  margin: 0;
+  }
+
+h1{
+  font-size: 2.6rem;
+}
+
+h2{
+  font-size: 4.8rem;
+}
+
+h3{
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,h5{
+  font-size: 2.8rem;
+}
+
+li,button{
+  font-size: 2rem;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #22ff7a; /* Couleur du lien quand on passe la souris dessus */
+}
+
+/* HEADER */
+
+.main-head{
+  background: #00254b;
+  color: #ffffff;
+}
+
+nav{
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+nav ul{
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo{
+  flex: 1 1 40rem;
+}
+
+img{
+  margin-right: 15px;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  min-height: 90vh;
+  background: url('images/code_background.jpg') no-repeat bottom center;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; 
+  filter: blur(8px); 
+  z-index: 1; 
+  opacity: 0.7; 
+}
+
+.hero h2, .hero h3, .hero .button {
+  z-index: 2; 
+}
+
+
+.hero1{
+  min-height: 90vh;
+  background: linear-gradient(rgb(0,0,0,1),transparent), url('images/code_background.jpg');
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero2{
+  min-height: 90vh;
+  background: linear-gradient(rgb(0,0,0,1),transparent), url('images/code_background.jpg');
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero3{
+  min-height: 90vh;
+  background: linear-gradient(rgb(0,0,0,1),transparent), url('images/code_background.jpg');
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3{
+  padding: 4rem;
+}
+
+a.button{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  padding: 2rem 6rem;
+  background: #00254b;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+}
+
+a.button:hover {
+  background-color: #004e9d; 
+}
+
+
+@media screen and (max-width:885px){
+  html{
+    font-size: 45%;
+  }
+  nav{
+    text-align: center;
+  }
+  #logo{
+    padding: 2rem;
+  }
+}
+
+.liens{
+  font-size: 2rem;
+  background-color: #3b3f72;
+  opacity: 0.88;
+  padding: 2em;
+  margin: 1em;
+}
+
+
+.historique{
+  font-size: 2rem;
+  background-color: #3b3f72;
+  opacity: 0.88;
+  padding: 2em;
+  margin: 1em;
+  text-align: left;
+}
+
+
+.commande{
+  font-size: 1.5rem;
+  opacity: 0.88;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.connexion{
+  font-size: 1.5rem;
+  opacity: 0.88;
+  line-height: 1.3;
+  color: #000000;
+}
+
+th,td,table{
+  background-color: #3a0beb;
+  opacity: 0.93;
+  width: 50%;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+th,td {
+	border : 2px solid;
+}
+
+.mdp{
+  font-size: 1.7rem;
+  background-color: #3a0beb;
+  opacity: 0.93;
+  padding: 1em;
+  margin: 2em;
+}
+
+
+#container{
+  width:400px;
+  margin:0 auto;
+  color: #000000;
+}
+/* Bordered form */
+form {
+  width:100%;
+  padding: 30px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+  width: 38%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+  background-color: #3b3f72;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+input[type=submit]:hover {
+  background-color: white;
+  color: #3b3f72;
+  border: 1px solid #3b3f72;
+}
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+}
+
+p.liens a {
+    color: #358fb3;
+    text-decoration: none;
+}
+
+p.liens a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  margin: auto; 
+  gap: 1.5rem;
+
+  width: 100vw;
+  min-height: 90vh;
+  background: linear-gradient(rgb(0,0,0,1),transparent), url('images/code_background.jpg');
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.button-card {
+  flex: 1; 
+  max-width: 30%;
+  height: 40vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.button-card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0; 
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.button-card p {
+  font-size: 2vh;
+  color: #333;
+  transition: color 0.3s; 
+}
+
+.button-card:hover {
+  background-color: #004e9d; 
+  color: #fff;
+}
+
+.button-card:hover p {
+  color: #fff;
+}
+
+.button-card img {
+  max-width: 100%; 
+  max-height: 150px;
+  object-fit: contain; 
+  margin-bottom: 1rem;
+}
+
+.button-card h4 {
+  font-size: 3vh;
+  color: black; 
+  transition: color 0.3s; 
+}
+
+.button-card:hover h4,p {
+  color: white; 
+}
+
+
+/* Conteneur pour les boutons de contact */
+.contact-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+
+
+/* Style des boutons de contact */
+.contact-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px; /* Largeur du bouton */
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+}
+
+/* Image à l'intérieur du bouton */
+.contact-button img {
+  width: 50px; /* Taille de l'image */
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Texte à l'intérieur du bouton */
+.contact-button p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Effet de survol */
+.contact-button:hover {
+  background-color: #004e9d;
+  color: #ffffff;
+  transform: translateY(-5px);
+}

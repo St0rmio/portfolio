@@ -42,10 +42,14 @@ a{
   text-decoration: none;
 }
 
+a:hover {
+  color: #22ff7a; /* Couleur du lien quand on passe la souris dessus */
+}
+
 /* HEADER */
 
 .main-head{
-  background: #3b3f72;
+  background: #00254b;
   color: #ffffff;
 }
 
@@ -76,22 +80,40 @@ img{
 
 /* HERO */
 
-.hero{
+.hero {
+  position: relative;
   min-height: 90vh;
-  background: linear-gradient(rgb(0,0,0,0.5),transparent), url('images/overworld_map.png');
+  background: url('images/code_background.jpg') no-repeat bottom center;
   background-size: cover;
-  background-position: bottom;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-} 
+  overflow: hidden;
+}
+
+.blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; 
+  filter: blur(8px); 
+  z-index: 1; 
+  opacity: 0.7; 
+}
+
+.hero h2, .hero h3, .hero .button {
+  z-index: 2; 
+}
+
 
 .hero1{
   min-height: 90vh;
-  background: linear-gradient(rgb(0,0,0,0.5),transparent), url('images/labyrinth_map.png');
+  background: linear-gradient(rgb(0,0,0,1),transparent), url('images/code_background.jpg');
   background-size: cover;
   background-position: bottom;
   color: #ffffff;
@@ -104,7 +126,7 @@ img{
 
 .hero2{
   min-height: 90vh;
-  background: linear-gradient(rgb(0,0,0,0.7),transparent), url('images/sea_map.png');
+  background: linear-gradient(rgb(0,0,0,1),transparent), url('images/code_background.jpg');
   background-size: cover;
   background-position: bottom;
   color: #ffffff;
@@ -117,7 +139,7 @@ img{
 
 .hero3{
   min-height: 90vh;
-  background: linear-gradient(rgb(0,0,0,0.5),transparent), url('images/contact.jpg');
+  background: linear-gradient(rgb(0,0,0,1),transparent), url('images/code_background.jpg');
   background-size: cover;
   background-position: bottom;
   color: #ffffff;
@@ -139,11 +161,15 @@ a.button{
 
   text-decoration: none;
   padding: 2rem 6rem;
-  background: #3b3f72;
+  background: #00254b;
   color: #ffffff;
   font-size: 1.8rem;
   cursor: pointer;
   border: none;
+}
+
+a.button:hover {
+  background-color: #004e9d; 
 }
 
 
@@ -280,4 +306,129 @@ p.liens a {
 
 p.liens a:hover {
     text-decoration: underline;
+}
+
+
+
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  margin: auto; 
+  gap: 1.5rem;
+
+  width: 100vw;
+  min-height: 90vh;
+  background: linear-gradient(rgb(0,0,0,1),transparent), url('images/code_background.jpg');
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.button-card {
+  flex: 1; 
+  max-width: 30%;
+  height: 40vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.button-card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0; 
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.button-card p {
+  font-size: 2vh;
+  color: #333;
+  transition: color 0.3s; 
+}
+
+.button-card:hover {
+  background-color: #004e9d; 
+  color: #fff;
+}
+
+.button-card:hover p {
+  color: #fff;
+}
+
+.button-card img {
+  max-width: 100%; 
+  max-height: 150px;
+  object-fit: contain; 
+  margin-bottom: 1rem;
+}
+
+.button-card h4 {
+  font-size: 3vh;
+  color: black; 
+  transition: color 0.3s; 
+}
+
+.button-card:hover h4,p {
+  color: white; 
+}
+
+
+/* Conteneur pour les boutons de contact */
+.contact-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+
+
+/* Style des boutons de contact */
+.contact-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px; /* Largeur du bouton */
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+}
+
+/* Image à l'intérieur du bouton */
+.contact-button img {
+  width: 50px; /* Taille de l'image */
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Texte à l'intérieur du bouton */
+.contact-button p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Effet de survol */
+.contact-button:hover {
+  background-color: #004e9d;
+  color: #ffffff;
+  transform: translateY(-5px);
 }
