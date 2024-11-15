@@ -1,3 +1,4 @@
+/* --------------------------------------------------------------------------- */
 /* GLOBAL CSS */
 
 *{
@@ -43,9 +44,41 @@ a{
 }
 
 a:hover {
-  color: #22ff7a; /* Couleur du lien quand on passe la souris dessus */
+  color: #22ff7a;
 }
 
+a.button{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  padding: 2rem 6rem;
+  background: #00254b;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+}
+
+a.button:hover {
+  background-color: #004e9d; 
+}
+
+
+@media screen and (max-width:885px){
+  html{
+    font-size: 45%;
+  }
+  nav{
+    text-align: center;
+  }
+  #logo{
+    padding: 2rem;
+  }
+}
+
+/* --------------------------------------------------------------------------- */
 /* HEADER */
 
 .main-head{
@@ -78,6 +111,7 @@ img{
   margin-right: 15px;
 }
 
+/* --------------------------------------------------------------------------- */
 /* HERO */
 
 .hero {
@@ -109,7 +143,6 @@ img{
 .hero h2, .hero h3, .hero .button {
   z-index: 2; 
 }
-
 
 .hero1{
   min-height: 90vh;
@@ -154,36 +187,9 @@ img{
   padding: 4rem;
 }
 
-a.button{
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
 
-  text-decoration: none;
-  padding: 2rem 6rem;
-  background: #00254b;
-  color: #ffffff;
-  font-size: 1.8rem;
-  cursor: pointer;
-  border: none;
-}
-
-a.button:hover {
-  background-color: #004e9d; 
-}
-
-
-@media screen and (max-width:885px){
-  html{
-    font-size: 45%;
-  }
-  nav{
-    text-align: center;
-  }
-  #logo{
-    padding: 2rem;
-  }
-}
+/* --------------------------------------------------------------------------- */
+/* OLD */
 
 .liens{
   font-size: 2rem;
@@ -191,6 +197,15 @@ a.button:hover {
   opacity: 0.88;
   padding: 2em;
   margin: 1em;
+}
+
+p.liens a {
+  color: #358fb3;
+  text-decoration: none;
+}
+
+p.liens a:hover {
+  text-decoration: underline;
 }
 
 
@@ -242,12 +257,12 @@ th,td {
   margin: 2em;
 }
 
-
 #container{
   width:400px;
   margin:0 auto;
   color: #000000;
 }
+
 /* Bordered form */
 form {
   width:100%;
@@ -256,6 +271,7 @@ form {
   background: #fff;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
 #container h1{
   width: 38%;
   margin: 0 auto;
@@ -282,6 +298,7 @@ input[type=submit] {
   cursor: pointer;
   width: 100%;
 }
+
 input[type=submit]:hover {
   background-color: white;
   color: #3b3f72;
@@ -289,6 +306,7 @@ input[type=submit]:hover {
 }
 
 
+/* --------------------------------------------------------------------------- */
 /* FOOTER */
 
 footer {
@@ -299,20 +317,13 @@ footer {
   color: #fff;
 }
 
-p.liens a {
-    color: #358fb3;
-    text-decoration: none;
-}
 
-p.liens a:hover {
-    text-decoration: underline;
-}
-
-
-
+/* --------------------------------------------------------------------------- */
+/* PROJECTS BUTTONS */
 
 .buttons-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   padding: 2rem;
@@ -330,15 +341,15 @@ p.liens a:hover {
 
 
 .button-card {
-  flex: 1; 
+  flex: 1 1 30%;
   max-width: 30%;
-  height: 40vh;
+  height: 300px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   padding: 2rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
 }
 
@@ -352,7 +363,7 @@ p.liens a:hover {
 }
 
 .button-card p {
-  font-size: 2vh;
+  font-size: 1.7rem;
   color: #333;
   transition: color 0.3s; 
 }
@@ -360,6 +371,7 @@ p.liens a:hover {
 .button-card:hover {
   background-color: #004e9d; 
   color: #fff;
+  transform: translateY(-5px);
 }
 
 .button-card:hover p {
@@ -374,7 +386,7 @@ p.liens a:hover {
 }
 
 .button-card h4 {
-  font-size: 3vh;
+  font-size: 2rem;
   color: black; 
   transition: color 0.3s; 
 }
@@ -384,7 +396,64 @@ p.liens a:hover {
 }
 
 
-/* Conteneur pour les boutons de contact */
+/* --------------------------------------------------------------------------- */
+/* SKILLS BUTTONS */
+
+.skills-background {
+  background-color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  margin: auto;
+  max-width: 1200px; 
+}
+
+.skill-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px; 
+  height: 300px; 
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  border: 10px solid #009ac0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.skill-button img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.skill-button h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+}
+
+.skill-button p {
+  font-size: 1.6rem;
+  color: black;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* CONTACT BUTTONS */
+
 .contact-buttons-container {
   display: flex;
   flex-direction: column;
@@ -394,15 +463,12 @@ p.liens a:hover {
   padding: 2rem;
 }
 
-
-
-/* Style des boutons de contact */
 .contact-button {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 250px; /* Largeur du bouton */
+  width: 250px; 
   padding: 2rem;
   background-color: #ffffff;
   color: #000000;
@@ -413,22 +479,69 @@ p.liens a:hover {
   text-align: center;
 }
 
-/* Image à l'intérieur du bouton */
 .contact-button img {
-  width: 50px; /* Taille de l'image */
+  width: 50px; 
   height: 50px;
   margin-bottom: 1rem;
 }
 
-/* Texte à l'intérieur du bouton */
 .contact-button p {
   font-size: 1.8rem;
   font-weight: bold;
+  color: black;
 }
 
-/* Effet de survol */
 .contact-button:hover {
   background-color: #004e9d;
   color: #ffffff;
   transform: translateY(-5px);
+}
+
+.contact-button:hover p {
+  color: #ffffff;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* PROJECTS PAGES */
+
+.project-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.project-block {
+  display: flex;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.project-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-image, .project-text {
+  flex: 1;
+}
+
+.project-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-text {
+  padding: 2rem;
+}
+
+.project-text h2 {
+  font-size: 2.4rem;
+  color: #333;
+}
+
+.project-text p {
+  font-size: 1.8rem;
+  color: #666;
+  line-height: 1.6;
 }
