@@ -24,41 +24,61 @@
 
     <div class="project-block">
       <div class="project-image">
-        <img src="images/" alt="Description de l'image 1">
+        <img src="images/sudoku/interface1.png" alt="Sudoku Solver">
       </div>
       <div class="project-text">
-        <h2>Étape 1 : Idée du projet</h2>
-        <p>Décrivez ici la genèse du projet, les motivations et le contexte de sa réalisation.</p>
+        <h2>OCR Sudoku Solver in C</h2>
+        <br><p>This project was done during my third semester at EPITA in a team of 4 members. 
+          We had to create a program in C able to take a sudoku grid image, apply image treatments to it if necessary and then solve it using Optical Character Recognition and a simple neural network.
+          We used GTK for the interface and SDL for the image treatments.
+        </p>
       </div>
     </div>
   
     <div class="project-block reverse">
       <div class="project-text">
-        <h2>Étape 2 : Conception et Planification</h2>
-        <p>Expliquez ici les étapes de planification, les choix de technologies et l'architecture prévue.</p>
+        <h2>Loading of an image using GTK</h2>
+        <br><p>Here we can see the interface used to load the sudoku grid to solve in the software. Basic image formats like png and jpeg are supported.</p>
       </div>
       <div class="project-image">
-        <img src="images/" alt="Description de l'image 2">
+        <img src="images/sudoku/interface2.png" alt="Sudoku Solver">
       </div>
     </div>
   
     <div class="project-block">
       <div class="project-image">
-        <img src="images/project-image3.png" alt="Description de l'image 3">
+        <img src="images/sudoku/interface3.png" alt="Sudoku Solver">
       </div>
       <div class="project-text">
-        <h2>Étape 3 : Développement</h2>
-        <p>Présentez ici les étapes clés du développement, les défis rencontrés et les solutions apportées.</p>
+        <h2>Grid loaded before treatments</h2>
+        <br><p>Here is the main part of the software where the user can select the treatments to apply before solving if necessary. 
+          The user can convert the image to grayscale, black and white, rotate it, and apply a gaussian blur.
+        </p>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="project-image">
+        <img src="images/sudoku/grid_detection.png" alt="Sudoku Solver">
+      </div>
+      <div class="project-text">
+        <h2>Grid detection</h2>
+        <br><p>The software is able to detect the grid in the image and extract the numbers from it with OCR neural network trained on printed and handwritten numbers.
+          The grid is then displayed in the interface and the user can see the boxes detected.
+        </p>
       </div>
     </div>
   
     <div class="project-block reverse">
       <div class="project-text">
-        <h2>Étape 4 : Tests et Déploiement</h2>
-        <p>Partagez ici les étapes de tests, d'optimisation, et les expériences du déploiement du projet.</p>
+        <h2>Grid solved</h2>
+        <br><p>The program uses a backtracking algorithm to explore the possibilities of acceptable solutions for the grid. 
+          When faced with an impossible case after trying some numbers, it "backtracks" to try different numbers until finding the solution.
+          This solution is finally displayed in the interface and can be saved to a file by the user ("Save" button).
+        </p>
       </div>
       <div class="project-image">
-        <img src="images/project-image4.png" alt="Description de l'image 4">
+        <img src="images/sudoku/interface4.png" alt="Sudoku Solver">
       </div>
     </div>
   
