@@ -102,6 +102,9 @@ a.button:hover {
   }
 }
 
+
+
+
 /* --------------------------------------------------------------------------- */
 /* HEADER */
 
@@ -345,36 +348,43 @@ footer {
 /* --------------------------------------------------------------------------- */
 /* PROJECTS BUTTONS */
 
+.projects-background {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(rgb(0,0,0,1),transparent), url('images/code_background.jpg');
+  background-repeat: repeat-y; 
+  background-position: top center; 
+  background-size: cover;
+}
+
+
 .buttons-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  gap: 2rem;
+  justify-content: center;
   padding: 2rem;
-  margin: auto; 
-  gap: 1.5rem;
-
-  width: 100vw;
-  min-height: 90vh;
-  background: linear-gradient(rgb(0,0,0,1),transparent), url('images/code_background.jpg');
-  background-size: cover;
-  background-position: bottom;
-  color: #ffffff;
-  text-align: center;
+  margin: auto;
+  max-width: 1500px; 
 }
 
 
 .button-card {
-  flex: 1 1 30%;
-  max-width: 30%;
-  height: 300px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px; 
+  height: 300px; 
   padding: 2rem;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   transition: transform 0.3s ease, background-color 0.3s ease;
-  cursor: pointer;
 }
 
 
@@ -382,6 +392,7 @@ footer {
   width: 100%;
   border-radius: 8px 8px 0 0; 
   max-height: 150px;
+  object-position: 145px;
   object-fit: cover;
   margin-bottom: 1rem;
 }
@@ -432,7 +443,6 @@ footer {
   background-repeat: repeat-y; 
   background-position: top center; 
   background-size: contain;
-
 }
 
 .skills-container {
@@ -456,7 +466,6 @@ footer {
   background-color: #ffffff;
   color: #000000;
   border-radius: 10px;
-  /*border: 10px solid #009ac0;*/
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease
