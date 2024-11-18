@@ -367,7 +367,7 @@ footer {
   justify-content: center;
   padding: 2rem;
   margin: auto;
-  max-width: 1500px; 
+  max-width: 1200px; 
 }
 
 
@@ -376,7 +376,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 450px; 
+  width: 350px; 
   height: 300px; 
   padding: 2rem;
   background-color: #ffffff;
@@ -392,7 +392,7 @@ footer {
   width: 100%;
   border-radius: 8px 8px 0 0; 
   max-height: 150px;
-  object-position: 145px;
+  object-position: 95px;
   object-fit: cover;
   margin-bottom: 1rem;
 }

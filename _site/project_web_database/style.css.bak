@@ -1,0 +1,173 @@
+/* GLOBAL CSS */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  background-color: whitesmoke; 
+  font-family: 'Raleway', sans-serif; 
+  margin: 0;
+  }
+
+h1{
+  font-size: 2.6rem;
+}
+
+h2{
+  font-size: 4.8rem;
+}
+
+h3{
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,h5{
+  font-size: 2.8rem;
+}
+
+li,button{
+  font-size: 2rem;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.main-head{
+  background: #15a857;
+  color: #ffffff;
+}
+
+nav{
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+nav ul{
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo{
+  flex: 1 1 40rem;
+}
+
+
+/* HERO */
+
+.hero{
+  min-height: 90vh;
+  background: linear-gradient(rgb(0,0,0,0.5),transparent), url('images/accueil.jpg');
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} 
+
+.hero1{
+  min-height: 90vh;
+  background: linear-gradient(rgb(0,0,0,0.5),transparent), url('images/offres.jpg');
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero2{
+  min-height: 90vh;
+  background: linear-gradient(rgb(0,0,0,0.7),transparent), url('images/faq.jpg');
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero3{
+  min-height: 90vh;
+  background: linear-gradient(rgb(0,0,0,0.5),transparent), url('images/inscription.jpg');
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3{
+  padding: 4rem;
+}
+
+a.button{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  padding: 2rem 6rem;
+  background: #15a857;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+}
+
+.faq{
+  font-size: 2rem;
+  background-color: #15a857;
+  opacity: 0.93;
+  padding: 2em;
+}
+
+@media screen and (max-width:885px){
+  html{
+    font-size: 45%;
+  }
+  nav{
+    text-align: center;
+  }
+  #logo{
+    padding: 2rem;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+}

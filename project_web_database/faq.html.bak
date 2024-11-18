@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons/award-solid.svg" type="image/svg+xml">
+    <title>BONNOTE</title>
+</head>
+
+<body>
+
+    <header class="main-head">
+        <nav>
+
+            <h1 id="logo"><a href="index.html">BONNOTE</a></h1>
+            <ul>
+                <li><a href="offres.php">Offres</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="inscription.php">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+	<section class="hero2">
+		<h3>Foire aux questions</h3>
+		<br><br>
+		<text> 
+			<p class="faq">Q : Qu’est-ce que BONNOTE ? <br><br>
+					R : BONNOTE est un réseau mettant en relation professeurs et élèves. Il permet aux élèves d’améliorer leurs résultats facilement et donne en échange aux professeurs la possibilité d’arrondir leurs fins de mois.
+			</p><br>
+			
+			<p class="faq">Q : Comment est-ce que cela fonctionne ? <br><br>
+					R : Il vous suffit d’abord de vous inscrire à notre site. Puis, dans la section Offres, sélectionnez la matière dans laquelle vous souhaitez bénéficier d’une augmentation de moyenne et le professeur correspondant. Vous pourrez alors choisir l’offre qui vous convient le mieux.
+			</p><br>
+			
+			<p class="faq">Q : Je ne trouve pas tous mes professeurs et toutes mes matières sur le site. Est-ce normal ? <br><br>
+					R : Un nombre encore restreint de professeurs participe au programme BONNOTE. Nous ne pouvons qu’espérer que ce nombre augmente afin de vous offrir à vous, élèves, de plus nombreuses possibilités.
+			</p>
+		</text>
+    </section>
+	
+
+    <footer>
+        <p>Guillaume B, Hakeem B et Kévin P - © 2022 BONNOTE</p>
+    </footer>
+
+</body>
+
+</html>
