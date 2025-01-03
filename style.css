@@ -36,7 +36,7 @@ body {
   background-color: whitesmoke; 
   font-family: 'GlacialIndifference', sans-serif; 
   margin: 0;
-  }
+}
 
 h1{
   font-size: 2.6rem;
@@ -44,11 +44,13 @@ h1{
 
 h2{
   font-size: 4.8rem;
+  color: #ffffff;
 }
 
 h3{
   font-size: 3rem;
   font-weight: normal;
+  color: #ffffff;
 }
 
 h4,h5{
@@ -621,3 +623,86 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+
+/* --------------------------------------------------------------------------- */
+/* ABOUT ME PAGE */
+
+.aboutme {
+  margin-bottom: 2rem;
+}
+
+.aboutme-background {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgb(48, 45, 45);
+  background-size: cover; 
+  background-position: top center;
+}
+
+.aboutme-text {
+  padding: 3rem;
+}
+
+.aboutme-text h2 {
+  font-size: 3rem;
+  color: #00d9ff;
+}
+
+.aboutme-text h3 {
+  font-size: 3rem;
+  color: #00d9ff;
+}
+
+.aboutme-text p {
+  font-size: 2rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.vignettes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.vignette {
+  flex: 1 1 calc((100% - 2rem) / 3);
+  max-width: calc((100% - 2rem) / 3);
+  aspect-ratio: 16 / 9; 
+  border: 1px solid white; 
+  border-radius: 4%; 
+  overflow: hidden; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.vignette img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block; 
+  margin:0
+}
+
+/* --------------------------------------------------------------------------- */
+/* CVs PAGE */
+
+.cv-background {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(rgb(0,0,0,1),transparent), url('images/code_background.jpg');
+  background-repeat: repeat-y; 
+  background-position: top center; 
+  background-size: cover;
+}
